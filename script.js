@@ -1,3 +1,6 @@
+// Initialize pulls array
+let pulls = JSON.parse(localStorage.getItem("gachaPulls")) || [];
+
 // Character data with rarity, types, and EX rates
 const characters = {
     "3★": [
@@ -103,7 +106,6 @@ function eraseData() {
 }
 
 // Load saved pulls from LocalStorage
-let pulls = JSON.parse(localStorage.getItem("gachaPulls")) || [];
 updateHistory();
 
 // Display featured EX units
