@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gacha Simulator</title>
+    <title>Gacha Simulator - Banner 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Gacha Simulator</h1>
-    
-    <button onclick="pullGacha()">Pull Gacha</button>
-    <button onclick="eraseData()">Erase Data</button> <!-- NEW BUTTON ADDED HERE -->
+    <h1>Gacha Simulator - Banner 1</h1>
 
-    <div id="result"></div>
+    <!-- Banner Display Section -->
+    <div id="banner">
+        <h2>Featured Units</h2>
+        <div id="featured"></div> <!-- Display featured units -->
+    </div>
+
+    <!-- Pull Gacha Button -->
+    <button onclick="pullGacha()">Pull Gacha</button>
     
+    <!-- Result Display -->
+    <div id="result"></div>
+
+    <!-- History of Pulls -->
     <h2>Previous Pulls:</h2>
     <ul id="history"></ul>
+
+    <!-- Erase Data Button -->
+    <button onclick="eraseData()">Erase Data</button>
 
     <script src="script.js"></script>
 </body>
